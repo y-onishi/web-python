@@ -11,7 +11,9 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Hello, world! {{message}}</h1>
+    {% for article in articles %}
+    <h1>article : {{article.title}}   link : {{article.link}}</h1>
+    {% endfor %}
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
